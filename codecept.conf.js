@@ -2,9 +2,10 @@ exports.config = {
   output: './output',
   helpers: {
     Playwright: {
-      url: 'http://localhost',
+      url: 'https://www.saucedemo.com/',
       show: true,
-      browser: 'chromium'
+      browser: 'chromium',
+      restart: false, // kembali ke skenario awal setelah menjalankan semua skenario
     }
   },
   include: {
@@ -14,6 +15,7 @@ exports.config = {
   bootstrap: null,
   timeout: null,
   teardown: null,
+  runInBand: true, // menjalankan skenario secara berurutan
   hooks: [],
   gherkin: {
     features: './features/*.feature',
