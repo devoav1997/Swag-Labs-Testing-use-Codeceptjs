@@ -1,7 +1,7 @@
-Feature: Login Rules
+Feature: Login and order Sauce Labs Backpack Rules
   In order to test Swag Labs
   As a Customer
-  I want to be able to Login in Swag Labs
+  I want to be able to Login in Swag Labs and I want to order Sauce Labs Backpack
 
   Background: 
     Given User already in Login Swag Labs
@@ -15,7 +15,6 @@ Scenario: from Product Swag Labs I want to order Sauce Labs Backpack
     Then I should see details Sauce Labs Backpack
     Then I add a Sauce Labs Backpack to my cart
     Then the cart should contain a Sauce Labs Backpack
-
 
 
 
