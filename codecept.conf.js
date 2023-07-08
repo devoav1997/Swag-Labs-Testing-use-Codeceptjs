@@ -2,7 +2,7 @@ exports.config = {
   output: './output',
   helpers: {
     Playwright: {
-      url: 'https://www.saucedemo.com/',
+      url: 'https://www.saucedemo.com',
       show: true,
       browser: 'chromium',
       restart: false, // kembali ke skenario awal setelah menjalankan semua skenario
